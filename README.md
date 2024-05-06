@@ -63,6 +63,11 @@ dt.predict([[0.5,0.8,9,260,6,0,1,2]])
 ![Screenshot 2024-04-06 202941](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/fbd2b025-c2e6-42fa-9cfa-a62d95e04829)
 ### x.head()
 ![Screenshot 2024-04-06 202946](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/e6eebae1-b13f-4a4d-8552-2af070534275)
+<br><br><br><br><br><br>
+
+
+
+
 ### accuracy value
 ![Screenshot 2024-04-06 202950](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/36a73dd2-3b0e-4111-9cca-a92defe90f1d)
 ### data prediction
