@@ -8,18 +8,17 @@ To write a program to implement the Decision Tree Classifier Model for Predictin
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. Import pandas
-2. Import Decision tree classifier
-3. Fit the data in the model
-4. Find the accuracy score
-
+step-1:start
+<br>step-2:Import pandas
+<br>step-3:Import Decision tree classifier
+<br>step-4:Fit the data in the model
+<br>step-5:Find the accuracy score
+<br>step-6:stop
 ## Program:
 ```
-/*
 Program to implement the Decision Tree Classifier Model for Predicting Employee Churn.
 Developed by: MIDHUN S
-RegisterNumber:  212223240087
-
+Register Number:  212223240087
 import pandas as pd
 data=pd.read_csv("/content/Employee.csv")
 data.head()
@@ -30,8 +29,10 @@ from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 data["salary"]=le.fit_transform(data["salary"])
 data.head()
+```
+```
 x=data[["satisfaction_level","last_evaluation","number_project","average_montly_hours","time_spend_company","Work_accident","promotion_last_5years","salary"]]
-x.head()    #no departments and no left
+x.head()   
 y=data["left"]
 from sklearn.model_selection import train_test_split
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=100)
@@ -43,38 +44,24 @@ from sklearn import metrics
 accuracy=metrics.accuracy_score(y_test,y_pred)
 accuracy
 dt.predict([[0.5,0.8,9,260,6,0,1,2]])
-*/
 ```
-
 ## Output:
-#### data.head()
-![exp 8 1](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/885d6139-399a-4c19-a3a0-db05ea5f3893)
-
-#### data.info()
-![exp 8 2](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/80cf87e6-649a-4ed3-abf1-b626c8e39455)
-
-
-#### isnull() and sum()
-![exp 8 3](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/5e2e4149-0a0a-4a6a-8dd9-cf007fa89b10)
-
-
-#### data value counts()
-![exp 8 4](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/7bda7406-970c-4569-bada-53f45bdb6cef)
-
-
-#### data.head() for salary
-![exp 8 5](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/b38d765b-244a-4814-af3c-29e2c25908a8)
-
-
-#### x.head()
-![exp 8 6](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/ad7ad011-7a8f-40de-8eb2-d6dabaa54981)
-
-
-#### accuracy value
-![exp 8 7](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/f330326b-c3dd-4313-99de-2f616067fa06)
-
-#### data prediction
-![exp 8 8](https://github.com/23003250/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/139331462/0a7b6663-9df1-4112-b407-8596359ed10f)
+### data.head()
+![Screenshot 2024-04-06 202922](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/3b6d1584-564f-4ff4-92e1-9e72a4bfd271)
+### data.info()
+![exp 6 op info](https://github.com/Vikaash19/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/148514589/c100f610-0f8a-4aec-ae65-652ab786dd2b)
+### isnull() and sum()
+![Screenshot 2024-04-06 202931](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/0bbc04b9-2b96-477b-bad1-d910d204480e)
+### data value counts()
+![Screenshot 2024-04-06 202936](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/07ba789e-e175-4018-bfd2-548037bbb6ba)
+### data.head() for salary
+![Screenshot 2024-04-06 202941](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/fbd2b025-c2e6-42fa-9cfa-a62d95e04829)
+### x.head()
+![Screenshot 2024-04-06 202946](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/e6eebae1-b13f-4a4d-8552-2af070534275)
+### accuracy value
+![Screenshot 2024-04-06 202950](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/36a73dd2-3b0e-4111-9cca-a92defe90f1d)
+### data prediction
+![Screenshot 2024-04-06 202956](https://github.com/rohithprem18/Implementation-of-Decision-Tree-Classifier-Model-for-Predicting-Employee-Churn/assets/146315115/5226bebe-5fc8-462c-b235-aafed67fc98f)
 
 ## Result:
 Thus the program to implement the  Decision Tree Classifier Model for Predicting Employee Churn is written and verified using python programming.
